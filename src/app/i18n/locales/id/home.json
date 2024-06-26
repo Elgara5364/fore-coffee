@@ -1,0 +1,41 @@
+{
+  "header": {
+    "navbar": {
+      "about": "Tentang",
+      "menu": "Menu",
+      "store": "Toko",
+      "collaboration": "Kolaborasi",
+      "career": "Karir",
+      "contact-us": "Hubungi Kami"
+    },
+    "links": {
+      "about": "tentang-kami",
+      "menu": "menu",
+      "store": "toko",
+      "collaboration": "kolaborasi",
+      "career": "karir",
+      "contact-us": "hubungi-kami"
+    }
+  },
+  "hero-title": {
+    "title1": "Grind The Essentials",
+    "title2": "Fore Grind Master 2023",
+    "title3": "The 1st Fore Coffee Store "
+  },
+  "hero-par": {
+    "par1": "Dibuat dari biji kopi Indonesia pilihan untuk pengalaman minum kopi terbaik setiap hari",
+    "par2": "Kompetisi tahunan bergengsi untuk barista Fore Coffee di seluruh Indonesia",
+    "par3": "Dibuat dari 450kg plastik daur ulang,  berlokasi di Kuningan City, Jakarta"
+  },
+  "our-story": {
+    "title": "Cerita Kami",
+    "details1": "Didirikan pada tahun 2018, Fore Coffee adalah startup kopi yang bercita-cita membuat kopi spesial terbaik untuk pelanggan. Seperti nama kami yang diambil dari kata “Forest” atau hutan, kami ingin tumbuh cepat, kuat, tinggi, dan menciptakan kehidupan di sekitar. Kami ingin kehadiran kami bisa meningkatkan kualitas kopi dalam komunitas kita.",
+    "details2": "Dengan jaringan dan pengalaman, kami menggunakan teknologi terkini unuk alat dan biji kopi kami. Diambil langsung dari petani pilihan, biji kopi berkualitas tinggi diproses dan dipanggang sempurna oleh kami, dan diajarkan kepada barista kompeten kami, dengan semangat untuk menyajikan satu cangkir kebahagiaan hanya untuk kamu.",
+    "read-more": "Selengkapnya"
+  },
+  "fore-news": {
+    "title": "Kabar Fore",
+    "details": "Dapatkan berita terbaru dan informasi menarik dari kami!",
+    "read-more": "Selengkapnya"
+  }
+}
