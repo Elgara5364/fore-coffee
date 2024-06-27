@@ -137,3 +137,56 @@ export const testimonyId = JSON.parse(
     },
   ])
 );
+
+export const ig = JSON.parse(
+  JSON.stringify([
+    {
+      src: require("/public/images/446778181_993943325654858_7012888760582025416_nthumb.jpg"),
+      link: "https://www.instagram.com/reel/C7eFBk6v72U/",
+    },
+    {
+      src: require("/public/images/446778181_993943325654858_7012888760582025416_nthumb.jpg"),
+      link: "https://www.instagram.com/reel/C7eFBk6v72U/",
+    },
+    {
+      src: require("/public/images/446778181_993943325654858_7012888760582025416_nthumb.jpg"),
+      link: "https://www.instagram.com/reel/C7eFBk6v72U/",
+    },
+    {
+      src: require("/public/images/446778181_993943325654858_7012888760582025416_nthumb.jpg"),
+      link: "https://www.instagram.com/reel/C7eFBk6v72U/",
+    },
+    {
+      src: require("/public/images/446778181_993943325654858_7012888760582025416_nthumb.jpg"),
+      link: "https://www.instagram.com/reel/C7eFBk6v72U/",
+    },
+    {
+      src: require("/public/images/446778181_993943325654858_7012888760582025416_nthumb.jpg"),
+      link: "https://www.instagram.com/reel/C7eFBk6v72U/",
+    },
+    {
+      src: require("/public/images/446778181_993943325654858_7012888760582025416_nthumb.jpg"),
+      link: "https://www.instagram.com/reel/C7eFBk6v72U/",
+    },
+    {
+      src: require("/public/images/446778181_993943325654858_7012888760582025416_nthumb.jpg"),
+      link: "https://www.instagram.com/reel/C7eFBk6v72U/",
+    },
+    {
+      src: require("/public/images/446778181_993943325654858_7012888760582025416_nthumb.jpg"),
+      link: "https://www.instagram.com/reel/C7eFBk6v72U/",
+    },
+    {
+      src: require("/public/images/446778181_993943325654858_7012888760582025416_nthumb.jpg"),
+      link: "https://www.instagram.com/reel/C7eFBk6v72U/",
+    },
+    {
+      src: require("/public/images/446778181_993943325654858_7012888760582025416_nthumb.jpg"),
+      link: "https://www.instagram.com/reel/C7eFBk6v72U/",
+    },
+    {
+      src: require("/public/images/446778181_993943325654858_7012888760582025416_nthumb.jpg"),
+      link: "https://www.instagram.com/reel/C7eFBk6v72U/",
+    },
+  ])
+);

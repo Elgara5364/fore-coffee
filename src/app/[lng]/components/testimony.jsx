@@ -9,7 +9,7 @@ const Testimony = async ({ lng }) => {
   const { t } = await useTranslation(lng, "home");
 
   return (
-    <section className="max-w-1200 px-4 mx-auto">
+    <section className="max-w-1200 px-4 mx-auto overflow-hidden">
       <div className="flex flex-col gap-1 relative">
         <div className="text-center px-5">
           <h1 className="px-5 font-bold text-3xl text-center text-primary">

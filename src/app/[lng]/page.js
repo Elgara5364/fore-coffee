@@ -3,6 +3,7 @@ import DownloadApp from "./components/downloadApp";
 import Hero from "./components/hero";
 import ForeNews from "./components/news";
 import OurStory from "./components/ourStory";
+import SocialMedia from "./components/socialMedia";
 import Testimony from "./components/testimony";
 
 export default function Home({ params: { lng } }) {
@@ -14,6 +15,7 @@ export default function Home({ params: { lng } }) {
       <DownloadApp lng={lng} />
       <BenefitPromo lng={lng} />
       <Testimony lng={lng} />
+      <SocialMedia lng={lng} />
     </>
   );
 }
