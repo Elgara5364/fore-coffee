@@ -1,5 +1,5 @@
 import { useTranslation } from "../../i18n";
-import { CarouselNews } from "./ui/carouselNews";
+import { CarouselNews } from "./ui/carousel";
 
 const ForeNews = async ({ lng }) => {
   const { t } = await useTranslation(lng, "home");

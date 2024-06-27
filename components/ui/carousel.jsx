@@ -179,7 +179,7 @@ const CarouselPrevious = React.forwardRef(
         disabled={!canScrollPrev}
         onClick={scrollPrev}
         {...props}>
-        <IoIosArrowBack className="size-8 text-[#006041] " />
+        <IoIosArrowBack className="size-6 text-[#006041] " />
         <span className="sr-only">Previous slide</span>
       </Button>
     );
@@ -206,7 +206,7 @@ const CarouselNext = React.forwardRef(
         disabled={!canScrollNext}
         onClick={scrollNext}
         {...props}>
-        <IoIosArrowForward className="size-8 text-[#006041] " />
+        <IoIosArrowForward className="size-6 text-[#006041]" />
         <span className="sr-only">Next slide</span>
       </Button>
     );
