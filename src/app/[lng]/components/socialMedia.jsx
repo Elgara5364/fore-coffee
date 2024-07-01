@@ -3,6 +3,7 @@ import Instagram from "/public/images/instagram-1.png";
 import { ig } from "../data/CarouselData";
 import Link from "next/link";
 
+// * TODO create a vertical gradient background from color to white
 const SocialMedia = ({ lng }) => {
   return (
     <section className="mt-10 pb-5 bg-[#c2e9f253]">

@@ -1,5 +1,6 @@
 import BenefitPromo from "./components/benefitPromo";
 import DownloadApp from "./components/downloadApp";
+import Footer from "./components/footer";
 import Hero from "./components/hero";
 import ForeNews from "./components/news";
 import OurStory from "./components/ourStory";
@@ -16,6 +17,7 @@ export default function Home({ params: { lng } }) {
       <BenefitPromo lng={lng} />
       <Testimony lng={lng} />
       <SocialMedia lng={lng} />
+      <Footer />
     </>
   );
 }
