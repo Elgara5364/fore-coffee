@@ -2,7 +2,6 @@ import Image from "next/image";
 import { useTranslation } from "../../i18n";
 import Citrus from "/public/images/Sunny-Citrus-Jasmine.png";
 import Macha from "/public/images/matcha-ice-1.png";
-
 import { SliderTestimony } from "./ui/slider";
 
 const Testimony = async ({ lng }) => {
@@ -37,7 +36,6 @@ const Testimony = async ({ lng }) => {
             className="relative -top-7 -left-[2%]"
           />
         </div>
-
         <SliderTestimony />
       </div>
     </section>

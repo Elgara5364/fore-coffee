@@ -10,6 +10,7 @@ export function Sidebar({ lng }) {
   const { t } = useTranslation(lng, "home");
 
   const [isOpen, setIsOpen] = useState(false);
+
   const handleOpen = () => {
     setIsOpen(true);
   };
