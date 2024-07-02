@@ -3,13 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "/public/logo/Logo-2.png";
 import CountrySwitcher, { LanguageSwitcher } from "./ui/switcher";
+import { Sidebar } from "./ui/sidebar";
 
 const Navbar = async ({ lng }) => {
   const { t } = await useTranslation(lng, "home");
 
   return (
-    <header className="w-full bg-white">
-      <div className="flex justify-between place-items-center max-w-1200 px-4 h-24 mx-auto bg-inherit">
+    <header className="w-full bg-[#F4F2EF] fixed top-0 z-50">
+      <div className="flex justify-between place-items-center max-w-1200 px-6 h-24 mx-auto bg-inherit">
         <div>
           <Link href={`/${lng}`}>
             <Image src={Logo} alt="Fore Coffee" width={80} />
@@ -52,16 +53,14 @@ const Navbar = async ({ lng }) => {
           </div>
           <CountrySwitcher lng={lng} />
         </div>
-        <div className="flex gap-5">
+        <div className="flex gap-5 ">
           <div className="flex place-items-center gap-4 max-[550px]:hidden ">
             <button className="py-2 px-5 outline-1 outline outline-green-950 rounded-full text-primary font-bold">
               Download App
             </button>
           </div>
           <LanguageSwitcher lng={lng} />
-          <button className="origin-center rotate-90 hidden max-[999px]:block">
-            |||
-          </button>
+          <Sidebar lng={lng} />
         </div>
       </div>
     </header>

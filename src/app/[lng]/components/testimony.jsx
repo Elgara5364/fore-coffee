@@ -37,6 +37,7 @@ const Testimony = async ({ lng }) => {
             className="relative -top-7 -left-[2%]"
           />
         </div>
+
         <SliderTestimony />
       </div>
     </section>

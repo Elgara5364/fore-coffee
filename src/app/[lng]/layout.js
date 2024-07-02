@@ -21,6 +21,12 @@ export const metadata = {
 export default function RootLayout({ children, params: { lng } }) {
   return (
     <html lang={lng} dir={dir(lng)}>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+      </head>
       <body className={jakarta.className}>
         <Navbar lng={lng} />
         {children}

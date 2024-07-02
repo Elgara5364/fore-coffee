@@ -34,7 +34,6 @@ export function LanguageSwitcher({ lng }) {
   const router = useRouter();
   const pathname = usePathname();
   const history = pathname.slice(4);
-  // console.log(history);
 
   const handleClick = (e) => {
     const locales = e.target.value;
