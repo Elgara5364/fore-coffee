@@ -35,8 +35,8 @@ const IntersectionObserver = ({ children }) => {
       ref={ref}
       className={
         !header
-          ? "w-full bg-[#F4F2EF] overflow-hidden duration-700 pt-2 absolute top-0 z-50"
-          : "w-full backdrop-blur-md overflow-hidden duration-700 fixed top-0 z-50"
+          ? "w-full overflow-x-clip duration-700 pt-2 absolute top-0 z-50"
+          : "w-full backdrop-blur-md duration-700 fixed top-0 z-50"
       }>
       {children}
     </div>

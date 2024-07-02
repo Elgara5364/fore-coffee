@@ -71,7 +71,7 @@ export function Sidebar({ lng }) {
           </div>
         </div>
       ) : (
-        <div className="w-1/2 h-[100vh] absolute z-0 top-0 right-0 max-w-1200 px-6 py-6 gap-8 flex flex-col bg-red-50 translate-x-full transition-all ease-in-out duration-500">
+        <div className="w-1/2 h-[100vh] absolute z-0 top-0 right-0 max-w-1200 px-6 py-6 gap-8 flex flex-col bg-white translate-x-full transition-all ease-in-out duration-500">
           <div className="flex w-full justify-between">
             <Image
               src={Logo}

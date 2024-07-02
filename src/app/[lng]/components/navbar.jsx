@@ -10,8 +10,8 @@ const Navbar = async ({ lng }) => {
   const { t } = await useTranslation(lng, "home");
 
   return (
-    <header className="max-w-1200 mx-auto">
-      <div className="h-24"></div>
+    <header className=" bg-[#F4F2EF] mx-auto ">
+      <div className="max-w-1200 h-24 bg-inherit overflow-hidden"></div>
       <IntersectionObserver>
         <div className="flex justify-between place-items-center max-w-1200 px-6 h-24 mx-auto bg-inherit">
           <div>
