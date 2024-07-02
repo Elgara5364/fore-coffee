@@ -9,18 +9,18 @@ import "slick-carousel/slick/slick-theme.css";
 import { testimonyId } from "../../data/CarouselData";
 import Image from "next/image";
 
-export function SliderTestimony({ lng }) {
+export function SliderTestimony() {
   // const { t } = useTranslation(lng, "home"); Inilah Penyebab Masalah infinite Loop
 
   var settings = {
     dots: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
   };
 
   return (
-    <Carousel className="w-full mt-10 max-w-xs mx-auto">
+    <Carousel className="w-full mt-10 max-w-1200 mx-auto">
       <Slider {...settings}>
         {testimonyId.map((item, index) => (
           <CarouselItem key={index}>

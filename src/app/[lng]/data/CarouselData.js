@@ -102,6 +102,14 @@ export const promo = JSON.parse(
       src: require("/public/images/appbanner1-1-1-300x300.jpg"),
       alt: "Promo",
     },
+    {
+      src: require("/public/images/appbanner1-1-1-300x300.jpg"),
+      alt: "Promo",
+    },
+    {
+      src: require("/public/images/appbanner1-1-1-300x300.jpg"),
+      alt: "Promo",
+    },
   ])
 );
 

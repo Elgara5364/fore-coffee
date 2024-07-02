@@ -11,7 +11,7 @@ const Navbar = async ({ lng }) => {
 
   return (
     <header className=" bg-[#F4F2EF] mx-auto ">
-      <div className="max-w-1200 h-24 bg-inherit overflow-hidden"></div>
+      <div className=" w-full h-24 bg-inherit "></div>
       <IntersectionObserver>
         <div className="flex justify-between place-items-center max-w-1200 px-6 h-24 mx-auto bg-inherit">
           <div>

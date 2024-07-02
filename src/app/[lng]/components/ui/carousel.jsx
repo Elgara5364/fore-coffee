@@ -11,21 +11,20 @@ import {
 import { newsIndo, promo, slidesEn, slidesId } from "../../data/CarouselData";
 import { ReadMoreButton } from "./button";
 import { useTranslation } from "@/src/app/i18n";
-import Link from "next/link";
 
 export async function CarouselHero({ lng }) {
   const { t } = await useTranslation(lng, "home");
 
   return (
-    <div className="w-full h-auto">
-      <Carousel className="max-w-sm mx-auto p-0">
+    <div className="w-full px-5 h-auto">
+      <Carousel className="max-w-1200 mx-auto p-0">
         <CarouselContent>
           {lng === "en"
             ? slidesEn.map((item, idx) => (
                 <CarouselItem key={idx}>
-                  <Card className="border-0 outline-0 ">
-                    <CardContent className="bg-[#F4F2EF] p-0 ">
-                      <div className="text-center pt-10 pb-5 h-full">
+                  <Card className="border-0 outline-0  ">
+                    <CardContent className="bg-[#F4F2EF] p-0 flex max-tablet:flex-col tablet:place-items-center ">
+                      <div className="tablet:w-1/2 text-center pt-10 pb-5 h-full tablet:text-start tablet:ps-5">
                         <h2 className="text-primary text-4xl font-extrabold">
                           {item.title}
                         </h2>
@@ -34,17 +33,19 @@ export async function CarouselHero({ lng }) {
                           {item.desc}
                         </p>
                       </div>
-                      <Image
-                        src={item.src}
-                        alt={item.alt}
-                        sizes="100%"
-                        style={{
-                          width: "90%",
-                          height: "auto",
-                          margin: "auto",
-                          padding: "0px 20px",
-                        }}
-                      />
+                      <div className="tablet:w-1/2">
+                        <Image
+                          src={item.src}
+                          alt={item.alt}
+                          sizes="100%"
+                          style={{
+                            width: "full",
+                            height: "full",
+                            margin: "auto",
+                            padding: "",
+                          }}
+                        />
+                      </div>
                     </CardContent>
                   </Card>
                 </CarouselItem>
@@ -73,8 +74,8 @@ export async function CarouselHero({ lng }) {
                 </CarouselItem>
               ))}
         </CarouselContent>
-        <CarouselPrevious className="absolute left-1 bg-transparent border-none" />
-        <CarouselNext className="absolute right-1 bg-transparent border-none" />
+        <CarouselPrevious className="absolute left-1 tablet:-left-5 bg-transparent border-none" />
+        <CarouselNext className="absolute right-1 tablet:-right-5 bg-transparent border-none" />
       </Carousel>
     </div>
   );
@@ -86,7 +87,7 @@ export function CarouselNews({ lng }) {
       opts={{
         align: "start",
       }}
-      className="w-5/6 mt-14 h-auto max-w-sm mx-auto">
+      className="w-4/6 mt-14 h-auto max-w-1200 mx-auto">
       <CarouselContent>
         {newsIndo.map((item, index) => (
           <CarouselItem
@@ -123,17 +124,17 @@ export async function CarouselPromo({ lng }) {
 
   return (
     <div className="flex h-auto relative">
-      <Carousel className="pt-10 px-2 w-full max-w-xs mx-auto">
+      <Carousel className="pt-10 tablet:pt-16 px-2 w-full max-w-1200 mx-auto">
         <div className="relative flex flex-col gap-3 text-center mb-7">
           <h3 className="text-primary text-2xl font-extrabold">
             {t("promo.title")}
           </h3>
           <p className="text-[10px] text-[#97A269]">{t("promo.desc")}</p>
         </div>
-        <div>
+        <div className="px-5">
           <CarouselContent>
             {promo.map((item, index) => (
-              <CarouselItem key={index} className="basis-1/2">
+              <CarouselItem key={index} className="basis-1/2 tablet:basis-1/3">
                 <Card className=" outline-none border-0 bg-transparent">
                   <CardContent className=" p-0 flex aspect-square items-center justify-center ">
                     <Image
@@ -153,7 +154,7 @@ export async function CarouselPromo({ lng }) {
         src={Promo}
         alt="BG"
         sizes="100%"
-        className="absolute top-5 -z-10 w-full h-full object-cover"
+        className="absolute top-5 -z-10 w-full h-[105%] tablet:h-[110%] object-cover rounded-3xl"
       />
     </div>
   );

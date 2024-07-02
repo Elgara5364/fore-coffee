@@ -2,13 +2,9 @@ import { CarouselHero } from "./ui/carousel";
 
 const Hero = ({ lng }) => {
   return (
-    <section className="px-4 bg-[#F4F2EF]">
+    <section className="px-8 bg-[#F4F2EF]">
       <div className="max-w-1200 mx-auto">
-        <div>
-          <div className="block overflow-hidden">
-            <CarouselHero lng={lng} />
-          </div>
-        </div>
+        <CarouselHero lng={lng} />
       </div>
     </section>
   );

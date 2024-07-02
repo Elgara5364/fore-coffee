@@ -6,7 +6,7 @@ import Link from "next/link";
 // * TODO create a vertical gradient background from color to white
 const SocialMedia = ({ lng }) => {
   return (
-    <section className="mt-10 pb-5 bg-[#c2e9f253]">
+    <section className="mt-10 pb-5 px-10 bg-[#c2e9f253]">
       <div className="max-w-1200 mx-auto ">
         <div className="pt-10 text-center flex flex-col gap-5 mb-12">
           <h2 className="text-[#97A259] ">Follow kami!</h2>
@@ -36,6 +36,7 @@ const SocialMedia = ({ lng }) => {
                   objectFit: "cover",
                   objectPosition: "top",
                 }}
+                className="rounded-xl"
               />
               <Image
                 src={Instagram}

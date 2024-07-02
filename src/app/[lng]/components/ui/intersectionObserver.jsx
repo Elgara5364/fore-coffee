@@ -1,14 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useInView } from "react-intersection-observer";
 
 const IntersectionObserver = ({ children }) => {
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
-    threshold: 1,
-    rootMargin: "0px",
-  });
   const [header, setHeader] = useState(false);
 
   const scrollHeader = () => {
@@ -27,16 +21,12 @@ const IntersectionObserver = ({ children }) => {
     };
   }, []);
 
-  // console.log(inView);
-  // console.log(entry);
-  // console.log(ref);
   return (
     <div
-      ref={ref}
       className={
         !header
-          ? "w-full overflow-x-clip duration-700 pt-2 absolute top-0 z-50"
-          : "w-full backdrop-blur-md duration-700 fixed top-0 z-50"
+          ? "w-full overflow-x-clip duration-700 pt-5 px-5 absolute top-0 left-0 z-50"
+          : "w-full backdrop-blur-md duration-700 px-5 fixed top-0 left-0 z-50"
       }>
       {children}
     </div>
