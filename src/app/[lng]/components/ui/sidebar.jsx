@@ -21,7 +21,9 @@ export function Sidebar({ lng }) {
 
   return (
     <div className="flex mx-auto">
-      <button className="hidden max-[999px]:block" onClick={handleOpen}>
+      <button
+        className="hidden max-[999px]:block rotate-90"
+        onClick={handleOpen}>
         |||
       </button>
       {isOpen ? (
