@@ -8,8 +8,8 @@ import AppStore from "/public/images/App-Store-Badge.png";
 const DownloadApp = async ({ lng }) => {
   const { t } = await useTranslation(lng, "home");
   return (
-    <section className="pt-10 pb-3 px-4">
-      <div className="max-w-1200 mx-auto px-8">
+    <section className="pt-10 pb-3 px-5">
+      <div className="max-w-1200 mx-auto ">
         <div className="px-2 text-center flex max-tablet:flex-col flex-row-reverse gap-3">
           <div className="tablet:w-1/2">
             <Image
@@ -20,7 +20,7 @@ const DownloadApp = async ({ lng }) => {
               className="mx-auto "
             />
           </div>
-          <div className="tablet:w-1/2 tablet:place-content-center tablet:text-start">
+          <div className="tablet:w-1/2 tablet:mx-7 tablet:place-content-center tablet:text-start ">
             <h3 className="mt-4 tracking-[0.65em] text-[11px] text-primary font-normal">
               {t("app.title")}
             </h3>

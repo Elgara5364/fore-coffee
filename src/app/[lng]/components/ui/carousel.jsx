@@ -124,7 +124,7 @@ export async function CarouselPromo({ lng }) {
 
   return (
     <div className="flex h-auto relative">
-      <Carousel className="pt-10 tablet:pt-16 px-2 w-full max-w-1200 mx-auto">
+      <Carousel className="pt-10 tablet:pt-16 tablet:px-2 w-full max-w-1200 mx-auto">
         <div className="relative flex flex-col gap-3 text-center mb-7">
           <h3 className="text-primary text-2xl font-extrabold">
             {t("promo.title")}

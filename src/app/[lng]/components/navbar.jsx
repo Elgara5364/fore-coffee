@@ -13,7 +13,7 @@ const Navbar = async ({ lng }) => {
     <header className=" bg-[#F4F2EF] mx-auto ">
       <div className=" w-full h-24 bg-inherit "></div>
       <IntersectionObserver>
-        <div className="flex justify-between place-items-center max-w-1200 px-6 h-24 mx-auto bg-inherit">
+        <div className="flex justify-between place-items-center max-w-1200 h-24 mx-auto bg-inherit">
           <div>
             <Link href={`/${lng}`}>
               <Image src={Logo} alt="Fore Coffee" width={80} />

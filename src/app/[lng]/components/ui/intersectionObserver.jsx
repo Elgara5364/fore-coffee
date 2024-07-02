@@ -25,7 +25,7 @@ const IntersectionObserver = ({ children }) => {
     <div
       className={
         !header
-          ? "w-full overflow-x-clip duration-700 pt-5 px-5 absolute top-0 left-0 z-50"
+          ? "w-full overflow-x-clip duration-700 pt-2 px-5 absolute top-0 left-0 z-50"
           : "w-full backdrop-blur-md duration-700 px-5 fixed top-0 left-0 z-50"
       }>
       {children}

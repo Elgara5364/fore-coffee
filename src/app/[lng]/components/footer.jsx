@@ -10,7 +10,7 @@ import Linkedin from "/public/ico/LinkedIn.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#e2edec] py-5 px-12">
+    <footer className="bg-[#e2edec] py-5 px-5">
       <div className="max-w-1200 mx-auto">
         <div className="grid tablet:grid-cols-2 gap-x-2 gap-y-1">
           <div className="mx-auto tablet:mx-0 tablet:pe-4 mb-5">

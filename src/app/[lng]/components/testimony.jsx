@@ -8,7 +8,7 @@ const Testimony = async ({ lng }) => {
   const { t } = await useTranslation(lng, "home");
 
   return (
-    <section className=" px-8 mt-10 mx-auto overflow-hidden">
+    <section className="px-5 mt-10 mx-auto overflow-hidden">
       <div className="max-w-1200 flex flex-col gap-1 relative">
         <div className="text-center px-5">
           <div className="flex justify-between relative">

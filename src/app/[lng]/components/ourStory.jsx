@@ -7,7 +7,7 @@ const OurStory = async ({ lng }) => {
   const { t } = await useTranslation(lng, "home");
 
   return (
-    <section className="my-10 max-w-1200 px-10">
+    <section className="my-10 max-w-1200 px-5">
       <h1 className="font-extrabold text-4xl text-center text-primary">
         {t("our-story.title")}
       </h1>
