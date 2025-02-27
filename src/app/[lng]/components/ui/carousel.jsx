@@ -53,8 +53,8 @@ export async function CarouselHero({ lng }) {
             : slidesId.map((item, idx) => (
                 <CarouselItem key={idx}>
                   <Card className="border-0 outline-0">
-                    <CardContent className="bg-[#F4F2EF] p-0">
-                      <div className="text-center pt-10 pb-5 h-full">
+                    <CardContent className="bg-[#F4F2EF] p-0 flex max-tablet:flex-col tablet:place-items-center ">
+                      <div className="tablet:w-1/2 text-center pt-10 pb-5 h-full tablet:text-start tablet:ps-5">
                         <h2 className="text-primary text-4xl font-extrabold desktop:text-8xl">
                           {item.title}
                         </h2>
@@ -63,12 +63,19 @@ export async function CarouselHero({ lng }) {
                           {item.desc}
                         </p>
                       </div>
-                      <Image
-                        src={item.src}
-                        alt={item.alt}
-                        sizes="100%"
-                        style={{ width: "90%", height: "auto", margin: "auto" }}
-                      />
+                      <div className="tablet:w-1/2">
+                        {" "}
+                        <Image
+                          src={item.src}
+                          alt={item.alt}
+                          sizes="100%"
+                          style={{
+                            width: "90%",
+                            height: "auto",
+                            margin: "auto",
+                          }}
+                        />
+                      </div>
                     </CardContent>
                   </Card>
                 </CarouselItem>
