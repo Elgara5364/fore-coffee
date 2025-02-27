@@ -9,7 +9,7 @@ const Testimony = async ({ lng }) => {
 
   return (
     <section className="px-5 mt-10 mx-auto overflow-hidden">
-      <div className="max-w-1200 flex flex-col gap-1 relative">
+      <div className="max-w-1200 flex flex-col gap-1 relative mx-auto">
         <div className="text-center px-5">
           <div className="flex justify-between relative">
             <div className="w-1/4 tablet:w-2/12 max-tablet:absolute max-tablet:top-0 max-tablet:-left-10">

@@ -25,11 +25,11 @@ export async function CarouselHero({ lng }) {
                   <Card className="border-0 outline-0  ">
                     <CardContent className="bg-[#F4F2EF] p-0 flex max-tablet:flex-col tablet:place-items-center ">
                       <div className="tablet:w-1/2 text-center pt-10 pb-5 h-full tablet:text-start tablet:ps-5">
-                        <h2 className="text-primary text-4xl font-extrabold">
+                        <h2 className="text-primary text-4xl font-extrabold desktop:text-8xl">
                           {item.title}
                         </h2>
                         <br />
-                        <p className="text-base font-semibold tracking-wider text-[#97A259] ">
+                        <p className="text-base font-semibold tracking-wider text-[#97A259] desktop:text-2xl">
                           {item.desc}
                         </p>
                       </div>
@@ -55,11 +55,11 @@ export async function CarouselHero({ lng }) {
                   <Card className="border-0 outline-0">
                     <CardContent className="bg-[#F4F2EF] p-0">
                       <div className="text-center pt-10 pb-5 h-full">
-                        <h2 className="text-primary text-4xl font-extrabold">
+                        <h2 className="text-primary text-4xl font-extrabold desktop:text-8xl">
                           {item.title}
                         </h2>
                         <br />
-                        <p className="text-base font-semibold tracking-wider text-[#97A259]">
+                        <p className="text-base font-semibold tracking-wider text-[#97A259] desktop:text-2xl">
                           {item.desc}
                         </p>
                       </div>
@@ -87,23 +87,23 @@ export function CarouselNews({ lng }) {
       opts={{
         align: "start",
       }}
-      className="w-4/6 mt-14 h-auto max-w-1200 mx-auto">
+      className="w-full mt-14 h-auto max-w-1200 mx-auto">
       <CarouselContent>
         {newsIndo.map((item, index) => (
           <CarouselItem
             key={index}
-            className=" min-[550px]:basis-1/2 md:basis-1/3 lg:basis-1/4">
+            className=" min-[550px]:basis-1/2 tablet:basis-1/3 desktop:basis-1/4">
             <div className="p-1">
               <Card className="shadow border">
                 <CardContent className="flex flex-col justify-center text-start p-6">
                   <Image src={item.src} alt={item.alt} />
-                  <h3 className="line-clamp-3 text-[12px] font-bold my-2.5">
+                  <h3 className="line-clamp-3 text-[12px] desktop:text-lg font-bold my-2.5 ">
                     {item.title}
                   </h3>
-                  <p className="text-[#B3b3b3] text-[10px] font-medium line-clamp-3">
+                  <p className="text-[#B3b3b3] text-[10px] desktop:text-sm font-medium line-clamp-3">
                     {item.details}
                   </p>
-                  <p className="mt-1.5 text-[#B3B3B3] text-[10px] italic">
+                  <p className="mt-1.5 desktop:mt-2.5 text-[#B3B3B3] text-[10px] desktop:text-[13px] italic">
                     {item.date}
                   </p>
                   <ReadMoreButton lng={lng} />
@@ -126,7 +126,7 @@ export async function CarouselPromo({ lng }) {
     <div className="flex h-auto relative">
       <Carousel className="pt-10 tablet:pt-16 tablet:px-2 w-full max-w-1200 mx-auto">
         <div className="relative flex flex-col gap-3 text-center mb-7">
-          <h3 className="text-primary text-2xl font-extrabold">
+          <h3 className="text-primary text-2xl font-extrabold ">
             {t("promo.title")}
           </h3>
           <p className="text-[10px] text-[#97A269]">{t("promo.desc")}</p>

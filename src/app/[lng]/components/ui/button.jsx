@@ -6,7 +6,7 @@ export async function OurStoryButton({ lng }) {
 
   return (
     <button className="mt-5 bg-green-700 px-4 py-2 rounded-full text-white font-bold">
-      <Link href={"/#"} className="text-[12px]">
+      <Link href={"/#"} className="text-[12px] desktop:text-base">
         {t("our-story.read-more")} <span className="ms-3 text-small">&gt;</span>
       </Link>
     </button>

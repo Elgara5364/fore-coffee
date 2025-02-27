@@ -14,14 +14,14 @@ const Navbar = async ({ lng }) => {
       <div className=" w-full h-24 bg-inherit "></div>
       <IntersectionObserver>
         <div className="flex justify-between place-items-center max-w-1200 h-24 mx-auto bg-inherit">
-          <div>
+          <div className="w-[13%]">
             <Link href={`/${lng}`}>
               <Image src={Logo} alt="Fore Coffee" width={80} />
             </Link>
           </div>
           <div className="flex gap-5 place-items-center max-[1000px]:hidden">
             <div className="flex gap-5">
-              <ul className="flex gap-5 text-primary font-base text-base tracking-wider">
+              <ul className="flex gap-5 text-primary font-bold text-base tracking-wider">
                 <li>
                   <Link href={`/${lng}/${t("header.links.about")}`}>
                     {t("header.navbar.about")}
